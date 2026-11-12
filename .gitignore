@@ -1,0 +1,7 @@
+# La configuracion con la clave, las charlas, las voces y el entorno de Python no se suben
+config.json
+charlas.log
+voces/
+venv/
+respuesta.wav
+__pycache__/

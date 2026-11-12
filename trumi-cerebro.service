@@ -1,0 +1,17 @@
+# Servicio para que el cerebro de Trumi arranque solo cuando se prende la Raspberry.
+# Instrucciones en README.md (reemplazar USUARIO por tu usuario de la Raspberry).
+[Unit]
+Description=El cerebro de Trumi (Whisper + Ollama + Piper)
+After=network-online.target ollama.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=USUARIO
+WorkingDirectory=/home/USUARIO/cerebro
+ExecStart=/home/USUARIO/cerebro/venv/bin/python trumi_cerebro.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

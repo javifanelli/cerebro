@@ -1,0 +1,17 @@
+{
+  "puerto": 8765,
+  "clave": "inventa-una-clave",
+
+  "ollama_url": "http://localhost:11434",
+  "ollama_modelo": "qwen2.5:1.5b",
+
+  "whisper_modelo": "base",
+  "whisper_hilos": 4,
+
+  "piper_voz": "voces/es_AR-daniela-high.onnx",
+  "tono": 1.15,
+  "lentitud": 1.0,
+
+  "olvidar_despues_de_s": 600,
+  "guardar_charlas": true
+}
